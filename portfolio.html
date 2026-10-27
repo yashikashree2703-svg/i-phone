@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashikashree.M</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: ;
+            color: BLACK;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4f46e5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #312e81;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #facc15;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 65px 20px;
+            background: white;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            color: #4f46e5;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            margin: 10px 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #4f46e5;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            background: #312e81;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+            scroll-margin-top: 20px;
+        }
+
+        h2.section-title {
+            color: #4f46e5;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #00000010;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .skills span {
+            background: #e0e7ff;
+            color: #312e81;
+            padding: 12px 20px;
+            border-radius: 20px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font: inherit;
+        }
+
+        button {
+            background: #4f46e5;
+            color: BLACK;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        footer {
+            background: #312e81;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Welcome to My Personal Website</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero" id="home">
+        <h2>Hello, I'm Your Yashikashree Muthusamy</h2>
+        <h3>Student | developer</h3>
+        <p>Welcome to my portfolio website!</p>
+        <p>I am interested in programming, electronics and technology.</p>
+        <a href="#projects" class="btn">View My Projects</a>
+    </div>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="card">
+            <p>
+                I am a college student who loves learning new technologies.
+                My interests include programming, embedded systems,
+                electronics and innovative projects. My goal is to develop
+                my technical skills and become a successful professional.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">My Education</h2>
+        <div class="card">
+            <h3>College</h3>
+            <p>Course: BSC CS WITH CGS</p>
+            <p>College: VELLELAR COLLEGE FOR WOMENS</p>
+            <p>Year: 2025-2027</p>
+        </div>
+
+        <div class="card">
+            <h3>Higher Secondary Education</h3>
+            <p>School: SVM school</p>
+            <p>Year:2025</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills">
+            <span>C Programming</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Embedded C</span>
+            <span>Arduino</span>
+            <span>Electronics</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="card">
+            <h3>Smart Gate System</h3>
+            <p>
+                A proposed automated gate system using fingerprint
+                authentication and sensors.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Smart Water Pipe Monitoring</h3>
+            <p>
+                A proposed sensor-based system to detect water pipe
+                leakage and control water flow.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Personal Portfolio Website</h3>
+            <p>A personal website created using HTML and CSS.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <form id="contactForm">
+            <label for="name">Yashikashree</label>
+            <input type="text" id="2025"
+                   placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email"
+                   placeholder="Enter your email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="5"
+                      placeholder="Enter your message"
+                      required></textarea>
+
+            <button type="submit">Submit</button>
+            <p id="status" aria-live="polite"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm")
+            .addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                document.getElementById("status").textContent =
+                    "Thank you! The form is validated, but email sending is not connected yet.";
+
+                this.reset();
+            });
+    </script>
+
+</body>
+</html>
